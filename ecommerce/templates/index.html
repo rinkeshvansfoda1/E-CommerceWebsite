@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/shopping_baba.css' %}">
+    <title>Shopping Baba</title>
+</head>
+<body>
+<div class="title-bar" >
+    <div class="joincolor">
+        <a href="/">
+            <img src="{% static '/images/media/shopping.jpg' %}" alt="Shopping Amazing" title="Shopping Amazing" width="50px" height="50px" style="float: left;">
+        </a>
+        <h1>
+            Shopping Amazing
+        </h1>
+    </div>
+    <div class="searrchhhs">
+        <form action="/search" method="get">
+            <input type="text" type="text">
+        </form>
+    </div>
+    <div class="4GAb_yuk" style="display: flex; padding-left: 190px;">
+        <div class="btn_cart_in">
+            <button class="btn-cart_in" type="button">
+                <img src="{% static '/images/media/cart.png' %}" alt="Cart" width="25px" height="25px">
+                Cart
+            </button>
+        </div>
+        <div class="btn_login">
+            <a href="{% url 'login' %}">
+                <button class="btn-log_in" type="button">
+                    Login
+                </button>
+            </a>
+        </div>
+        <div class="btn_register">
+            <a href="{% url 'register' %}">
+                <button class="btn-register" type="button">
+                    Register
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="_anothrcont_tent" style="grid: 500px;" style="float: right;">
+    <form action="/search" method="get">
+        <input type="text">
+    </form> -->
+<!-- <div class="flex-cointaner">
+    <div class="searccch">
+        <form action="/search" method="get">
+            <input type="text">
+        </form>
+    </div>
+</div> -->
+<div class='IronMan'>
+    <div class='first'>
+        <img class="imgga" src="{% static 'images/media/download.jpg' %}" alt="Computer & PC's" width="350px" height=255px">
+        <a href="{% url 'computer' %}">Computer & PC's</a>
+    </div>
+    <hr />
+    <div class='second'>
+        <img class="imgga" src="{% static 'images/media/images.jpg' %}" alt="Laptop" width='350px' height='255px'>
+        <a href="{% url 'laptop' %}">Laptop</a>
+    </div>
+    <hr />
+    <div class='third'>
+        <img class="imgga" src="{% static 'images/media/download (1).jpg' %}" alt="Washing Machine" width='350px' height='255px'>
+        <a href="{% url 'washing_machine' %}">Washing Machine</a><br>
+    </div>
+    <hr />
+    <div class=first_one>
+        <img class="imgga" src="{% static 'images/media/images (1).jpg' %}" alt="Phone" width='350px' height='255px'>
+        <a href="{% url 'phone' %}">Phone</a><br>
+    </div>
+    <hr />
+    <div class=first_second>
+        <img class="imgga" src="{% static 'images/media/images (2).jpg' %}" alt="Smart TV's" width='350px' height='255px'>
+        <a href="{% url 'smarttv' %}">Smart TV's</a><br>
+    </div>
+    <hr />
+    <div class=first_third>
+        <img class="imgga" src="{% static 'images/media/download (2).jpg' %}" alt="Jean's" width='350px' height='255px'>
+        <a href="{% url 'jeans' %}">Jean's</a><br>
+    </div>
+    <hr />
+</div>
+</div>
+</body>
+<footer>
+<div class="footer-container">
+    Top Stories: Brand Directory&nbsp;<br>
+    MOST SEARCHED FOR ON FLIPKART:TV & Appliances Big Saving Days SaleEOSS SaleiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13 MiniTV & Appliances Big Billion Days SaleFlipkart Pay Later EMIBig Billion DaysFlipkart Motor Vehicle InsuranceFlipkart QuickEd A Mamma ClothingBooksFlipkart Electronics: TV & Home Appliances SaleGrand Kitchen & Home Appliances SaleAuto Accessories StoreStreak SunglassesGold CoinsFlipkart PlusFlipkart Super CoinFlipkart COVID-19 InsuranceFlipkart Help CentreFlipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreSareesFlipkart Axis Bank Credit CardFlipkart Pay LaterJewelleryWatchesGold CoinMangalsutraSunglassesMi SunglassesBackpacksRay Ban Sunglasses
+    MOBILES:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Vivo Y50Vivo Y12Reno2 FOppo A12Oppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2Realme 5Infinix Hot 8iPhone 11iPhone 11 ProiPhone 11 Pro MaxMobile Offersiphone xiphone 8iphone 7iphone 6Redmi 5A4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile
+    CAMERA:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
+    LAPTOPS:Microsoft Surface Go Pentium Gold 64GBMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsBusiness Laptops
+    TVS:TVs Big Billion Days SaleMotorola TVRedmi Smart TelevisionsOnePlus TVsRealme SLED 4K Smart TVsMI 43 Inch 4K TVMI 40 Inch TVMi 65 Inch TVSamsung 32 Smart TVLG TVTVSony TVSamsung TVMi 49 Inch Smart TVAndroid TelevisionIffalcon TvMi TV
+    LARGE APPLIANCES:Large Appliances Big Billion Days SaleWashing MachinesRefrigeratorsAir ConditionersAir FryersAppliance Parts and AccessoriesBread MakersCake MakersCoffee MakersCotton Candy MakersCupcake MakersDonut MakersDough PressesEgg CookersElectric CookersElectric Deep FryersElectric Jug(Heater) / Travel KettlesElectric TandoorsElectric Cooking HeatersElectric PansFlour MillsFood MakersFood ProcessorsHand BlendersIce Cream MakersIndian Coffee FiltersInduction CooktopsInverter BatteriesInverter BatteriesInverters / stabilizerIrons / Iron BoxLandline PhonesMixer Grinder JuicerNoodles Spaghetti MakerPizza MakersPizzelle MakersPop Up ToastersPopcorn MakersPotato Twister MachineRoti MakersSandwich MakersSlow CookersSoda MakersVada MakersVoltage StabilizersWaffle MakersWet GrindersAir PurifiersChimneysMicrowave OvensOven Toaster GrillSewing MachinesVacuum CleanersWater PurifierAir CoolersFanImmersion RodsRoom HeatersWater Heater GeysersVoltas ACHitachi ACLloyd ACBlue Star ACDaikin ACLG ACSamsung RefrigeratorsHaier RefrigeratorWhirlpool Refrigerator
+    CLOTHING:Men ShirtsKurta PajamaKurtasMen T-ShirtsJeansCrop TopsRaincoatMen SuitsMen TrousersMens BlazersSareeDressesBaby girl dressesFloral DressesSkirtsKids DressesDesigner Salwar SuitsBraDesigner KurtisTrack PantMen KurtasGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliIndo Western DressGownsCulottesSherwaniGirls ClothesSalwar SuitsTopsLehengaDress MaterialsIndo western for menKurtisDesigner SareesSummer DressesLeggingsDesigner BlousesBlouse DesignsBanarasi SareesSilk SareesTissue SareesCotton SareesShortsBlouseLong SkirtsPalazzoWinter JacketsJoggersMini DressesNight SuitsBanarsi SuitInnerwearSports WearCapChanderi SareesLinen SareesPaithani SareesOff the shoulder topsPantiesGirls ShortsShrugsSalwarGirls DressesBikiniPajamasKids WearManyavar KurtasWomens TrousersJacketsWestern WearLevis
+    FOOTWEAR:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes
+    GROCERIES:PhonePe Grocery VoucherHand WashSugar Jaggery SaltsRiceMasala & SpicesDal PulsesAttaCookiesNoodlesGheeDry FruitsToor DalOlive OilSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaButterAmul MilkJuicesTata TeaGrocery StoreGrocery Essential StoreMuesliBreakfast CerealHand WashHand SanitizerLizol Floor CleanerDetergentsChipsTeaMilkChocolatesSoft DrinksRavaCoffeeSona Masoori RiceSugarColgate ToothpasteShampooAlmondsMoong DalInstant CoffeeParle Namkeen
+    BEST SELLING ON FLIPKART:Samsung Galaxy Tab S7+BooksToys & Games StoreCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskFastrack WatchesWalletsEarringsGold CoinsHandbags
+    FURNITURE:Grand Furniture SaleFurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite SofaWakefit MattressGreen SofaBlack SofaBrown Sofa
+    <div class="lassater_footere">
+        <div class="_Tegtre" style="background-color: black; color: white; padding: 10px; height: 50px;">
+            <a href="{% url 'aboutus' %}">About Us</a><br>
+            <a href="{% url 'Contactus' %}">Contact Us</a>
+        </div>
+    </div>
+</div>
+</footer>
+</html>

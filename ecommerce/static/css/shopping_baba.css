@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/* whole title bar class */
+.title-bar{
+    /* height: 50px; */
+    background-color: yellow;
+    display: flex;
+}
+h1{
+    background-color: yellow;
+    padding-top: 5px;
+
+}
+.footer-container{
+    height: 580px;
+    background-color: whitesmoke;
+}
+input{
+    background-color: white;
+    width: 350px;
+    height: 25px;
+}
+.searrchhhs{
+    display: grid;
+    padding: 10px;
+
+}
+.btn-log_in, .btn-register, .btn-cart_in{
+    background-color: blue;
+    color: white;
+    font-size: medium;
+    box-sizing: border-box;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+}
+.btn_login{
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.btn_register{
+    padding-top: 5px;
+    padding-right: 10px;
+
+}
+.btn_cart_in{
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.joincolor{
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+}
+.IronMan, .IronMan2{
+    background-color: lightblue;
+}
+.searrchhhs{
+    display: grid;
+    background-color: yellow;
+    padding: 10px;
+    padding-left: 60px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+.first{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.second{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.third{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.first_one{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.first_second{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.first_third{
+    padding: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: baseline;
+    justify-items: center;
+    grid-gap: 5px;
+    font-size: x-large;
+}
+.imgga{
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Amazing: Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .tittlee{
+        display: flex;
+        position: static;
+        background-color: yellow;
+    }
+    .joincolor{
+        height: 50px;
+        display: inline-flex;
+    }
+    h1{
+        padding-top: 5px;
+    }
+    .container{
+        background-color: lightblue;
+        padding-left: 27vw;
+        padding-top: 24vh;
+        height: 70vh;
+    }
+    .box_contin{
+    background-color: whitesmoke;
+    height: 41vh;
+    width: 41vw;
+    padding: 5px;
+    display: inline-table;
+    }
+    .email-text{
+        position: static;
+        padding: 15px;
+    }
+    .email-password{
+        position: static;
+        padding: 15px;
+    }
+    .btnn-button{
+        box-sizing: border-box;
+        display: block;
+        padding-left: 15px;
+    }
+    .btn_submit{
+        height: 25px;
+        width: 70px;
+    }
+</style>
+<body>
+<div class="tittlee">
+    <div class="joincolor">
+        <a href="/">
+            <img src="{% static '/images/media/shopping.jpg' %}" alt="Shopping Amazing" title="Shopping Amazing" width="50px" height="50px" style="float: left;">
+        </a>
+        <h1>
+            Shopping Amazing
+        </h1>
+    </div>
+</div>
+<div class="container">
+    <div class="cls_conttant">
+        <div class="box_contin">
+            <h2>
+                Sign in
+            </h2>
+            <p>to continue to Shopping Amazing</p>
+            <div class="conncc">
+                <form action="/" class=form-container>
+                    <div class="email-text">
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="text" placeholder="Enter Email" name="email" required style="width: 50vw;">
+                    </div>
+                    <div class="email-password">
+                        <label for="password"><b>Password</b></label><br>
+                        <input type="password" placeholder="Enter Password" name="password" required style="width: 50vw;">
+                    </div>
+                    <div class="btnn-button">
+                        <button type="submit" class='btn_submit' id='click' onclick="loginnsw">Log in</button>
+                    </div>
+                    <!-- <script>
+                        function loggn(){
+                            'login done'
+                            document.getElementById('click').style.display='block';
+                        }
+                    </script> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

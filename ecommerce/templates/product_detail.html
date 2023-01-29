@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Amazing: Product Detail</title>
+</head>
+<style>
+    *{
+    background-color: lightblue;
+    margin: 0;
+    }
+    #Imgdta{
+        width: 25%;
+        height: 300px;
+    }
+    #button-buynow{
+        background-color: orange;
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    #button-addcart{
+        background-color: orange;
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    /* whole title bar class */
+    .title-bar{
+    background-color: yellow;
+    display: flex;
+    }
+    h1{
+        background-color: yellow;
+        padding-top: 5px;
+    }
+    .footer-container{
+        height: 580px;
+        background-color: rgb(247, 240, 240);
+    }
+    input{
+        background-color: white;
+        width: 350px;
+        height: 25px;
+    }
+    .searrchhhs{
+        display: grid;
+        padding: 10px;
+    }
+    .btn-log_in, .btn-register, .btn-cart_in{
+        background-color: blue;
+        color: white;
+        font-size: medium;
+        box-sizing: border-box;
+        text-align: center;
+        height: 40px;
+        width: 100px;
+    }
+    .btn_login{
+        padding-top: 5px;
+        padding-right: 10px;
+        background-color: yellow;
+    }
+    .btn_register{
+        padding-top: 5px;
+        padding-right: 10px;
+        background-color: yellow;
+    }
+    .btn_cart_in{
+        padding-top: 5px;
+        padding-right: 10px;
+        background-color: yellow;
+    }
+    .joincolor{
+        display: inline-flex;
+    }
+    .content_dta{
+        padding: 10px;
+    }
+    .searrchhhs{
+        display: grid;
+        background-color: yellow;
+        padding: 10px;
+        padding-left: 60px;
+    }
+    .tittle_Dta{
+        display: flex;
+        background-color: yellow;
+    }
+    /* .content-data{
+        display: inline-flexbox;
+        padding-left: 50%;
+        float: left; 
+        white-space: normal;
+    } */
+</style>
+<body>
+<div class="tittle_Dta">
+    <div class="joincolor">
+        <a href="/">
+            <img src="{% static '/images/media/shopping.jpg' %}" alt="Shopping Amazing" title="Shopping Amazing" width="50px" height="50px" style="float: left;">
+        </a>
+        <h1>
+            Shopping Amazing
+        </h1>
+    </div>
+    <div class="searrchhhs">
+        <form action="/search" method="get">
+            <input type="text" type="text">
+        </form>
+    </div>
+    <div class="4GAb_yuk" style="display: flex; padding-left: 190px; background-color: yellow;">
+        <div class="btn_cart_in">
+            <button class="btn-cart_in" type="button">
+                <img src="{% static '/images/media/cart.png' %}" alt="Cart" width="25px" height="25px">
+                Cart
+            </button>
+        </div>
+        <div class="btn_login">
+            <button class="btn-log_in" type="button">
+                Login
+            </button>
+        </div>
+        <div class="btn_register">
+            <button class="btn-register" type="button">
+                Register
+            </button>
+        </div>
+    </div>
+</div>
+<div class="content_dta">
+    <div class="Product-Detail">
+        <!-- here contact is used to fetch data from contect dictionary 'contact' to fetch data for specific data, and here Product_laptop will not be fetch beacuse that we had not called in views module under product details section -->
+        <!-- {{ contact }} -->
+        <!-- {{contact.Image}} also use .url after Image to access data -->
+        <div class="full-product-detail">
+            <h2>
+                {{ contact_laptop.Product_Name }}
+            </h2>
+            <img id="Imgdta" src='{{ contact_laptop.Image.url }}' alt="{{ contact_laptop.Product_Name }}">
+                <pre>{{ contact_laptop.Description }}<br>Price:{{ contact_laptop.Price}}<br>Offer:{{ contact_laptop.Offer }}</pre>
+            </div>
+            <button id='button-buynow' type="button">BUY NOW</button>
+            <button id='button-addcart' type="button">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
